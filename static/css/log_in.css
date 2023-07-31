@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+.body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 60%;
+    height: calc(100% - 40px) ;
+    margin: 20px 0;
+}
+
+@media ( max-width:767px ) {
+    .body{
+        width: 90%;
+    }
+}
+.body .up_bar {
+    text-align: start;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.body .up_bar span:first-child{
+    font-size: 20px;
+    margin: 0 20px 0 0;
+    border: 1px solid #7b7a7ab9;
+    padding: 10px;
+border-radius: 8px;
+transition: .2s;
+}
+.body .up_bar span:first-child:hover{
+    border-color: white;
+    background-color: #c31dd1;
+}
+.body .icons{
+    margin-top: 50px;
+  
+}
+.body .icons .icon{
+ display:flex;
+    justify-content: space-around ;
+}
+
+.body .icons .icon div{
+  display: inline-block;
+    border: 1px solid #7b7a7ab9;
+    padding: 10px 50px;
+    border-radius: 10px;
+    transition: .2s;
+}
+.body .icons  .icon div:hover{
+    color: white;
+    background-color: #c31dd1;
+}
+.body .icons .icon div i{
+    font-size: 50px;
+}
+.body .inputs{
+    margin-top: 50px;
+}
+.body .inputs label{
+    margin-bottom: 10px;
+    display: block;
+    font-weight: bold;
+}
+.body .inputs label.eye_icon{
+display: flex;
+justify-content: flex-end;
+}
+.body .inputs input{
+    margin-bottom: 10px;
+width: 100%;
+border: 1px solid #676767;
+border-radius: 10px;
+padding: 15px 10px;
+background-color: black;
+color: white;
+}
+.body .inputs input:hover{
+    width: 100%;
+    border-width:3px ;
+border-color: #c31dd1;
+}
+.body .inputs span{
+  
+    border-radius: 4px;
+    display: inline-block;
+    width: 20px;
+    cursor: pointer; 
+    margin-bottom: 10px;
+}
+
+.body .inputs input:focus{
+  outline: none;
+        width: 100%;
+        border-width:3px ;
+    border-color: #c31dd1;
+    
+}
+.body .inputs input[ type="password"]{
+    margin-bottom: 3px;
+
+}
+.body .inputs input[ type="text"]{
+    margin-bottom: 3px;
+}
+.body .inputs input[type="submit"]{
+    background-color: #c31dd1;
+}
+.body .sign_up p{
+color: #676767;
+}
+.body .sign_up p a{
+    cursor: pointer;
+text-decoration: none;
+font-weight: bold;
+color: white;
+
+}
+

@@ -1,0 +1,20 @@
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/chick_email.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chick_email</title>
+</head>
+<body>
+    <div class="chick_email">
+        <form method="POST">
+            {%csrf_token%}
+<label for="chick_email">chick Your email:</label>
+{{form.code}}
+<input type="submit" value="chick me">
+        </form>
+    </div>
+</body>
+</html>

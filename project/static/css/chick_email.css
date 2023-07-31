@@ -1,0 +1,57 @@
+body{
+    background-color: black;
+}
+.chick_email{
+    height: 100px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% , -50%);  
+color: white;
+display: flex;
+font-size: 20px;
+}
+input[ type="submit"]{
+    cursor: pointer;
+    margin-top:20px ;
+    position: absolute;
+    display: block;
+    right: 0px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 60px;
+   background-color: #676767;
+}
+input[ type="submit"]:hover{
+ background-color: #c31dd1;
+}
+input[type="text"]{
+    position: relative;
+outline: none;
+border: none;
+background-color: transparent;
+font-size: 20px;
+color:  #676767;
+border-bottom: 1px solid #676767;
+}
+@media (max-width:790px) {
+    input[type="text"]{
+        font-size: 15px;
+       
+    } 
+    .chick_email{
+        font-size: 15px;
+    }
+    input[type="submit"]{
+left: 50%;
+transform: translate(-50%);
+    }
+}
+input[type="text"]:hover , input[type="text"]:focus{
+    color: #c31dd1;
+border-bottom: 1px solid #c31dd1;
+}
+
+

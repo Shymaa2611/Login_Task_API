@@ -1,0 +1,19 @@
+body{
+    background-color: black ;
+}
+div{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+}
+div p{
+    display: inline;
+    margin-right: 10px;
+}
+div span{
+    color:#c31dd1 ;
+    font-weight: bold;
+}
