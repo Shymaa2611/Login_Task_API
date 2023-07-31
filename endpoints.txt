@@ -1,0 +1,3 @@
+https://dataapi.pythonanywhere.com/signUp/ (username,email,password)
+https://dataapi.pythonanywhere.com/login/   (email,password)
+
