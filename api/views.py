@@ -108,6 +108,7 @@ def signUp(request):
 
 def verify(request):
     verification_code = request.session.get('verification_code')
+    User.objects.exclude(username__in=VerifyCodeM.objects.values_list('user__username', flat=True)).delete()
     if request.method == 'POST':
         form = verifiedForm(request.POST)
         if form.is_valid():
