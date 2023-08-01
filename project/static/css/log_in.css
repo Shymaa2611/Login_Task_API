@@ -71,7 +71,7 @@ transition: .2s;
     display: block;
     font-weight: bold;
 }
-.body .inputs label.eye_icon{
+.body .inputs  label.eye_icon{
 display: flex;
 justify-content: flex-end;
 }
