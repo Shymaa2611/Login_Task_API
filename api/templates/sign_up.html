@@ -35,10 +35,12 @@
 {{form.email}}
 
 <label for="password">password</label>
-{{form.password}}
-
-<label for="password" class="eye_icon"><span><i class="fa-solid fa-eye" style="color: #ffffff;"></i></span></label>
-
+<div class="input-group">
+    {{ form.password }}
+    <div class="input-group-append">
+    <button type="button" class="btn btn-outline-secondary show-password-btn"  style=" margin-left: 790px; background-color:transparent;  border: none; outline: none;"> <label for="password"  class="eye_icon"></label><span><i class="fa-solid fa-eye" style="color: #ffffff ;" ></i></span></label></button> 
+    </div>
+</div>
   
 <input type="submit" value="Creat account">
 </form>
@@ -54,5 +56,18 @@
 
 
 <script src="{%static 'js/log_in.js' %}"></script>
+<script>
+    var passwordInput = document.getElementById('id_password');
+    var showPasswordButton = document.querySelector('.show-password-btn');
+    showPasswordButton.addEventListener('click', function() {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            showPasswordButton.innerHTML = '<i class="fa-solid fa-eye-slash" style="color: #ffffff;"></i>';
+        } else {
+            passwordInput.type = 'password';
+            showPasswordButton.innerHTML = '<i class="fa-solid fa-eye" style="color: #ffffff;"></i>';
+        }
+    });
+</script>
 </body>
 </html>
